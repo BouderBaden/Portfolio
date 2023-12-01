@@ -1,0 +1,139 @@
+article{
+    background-color: #1d1f25;
+    padding: 50px 15px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.header-modale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-modale h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.header-modale span{
+    display: flex;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 11px;
+    font-weight: bold;
+    color: #eff0f3;
+}
+.header-modale span:hover{
+    cursor: pointer;
+    background-color: #0f131a;
+}
+
+.date{
+    margin:  0 0 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #eff0f3;
+}
+
+.desc{
+    overflow: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #eff0f3;
+    margin-bottom: 25px;
+    height: 100px;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #ccc;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.contenant-image{
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    height: 200px;
+}
+
+.contenant-image img {
+    width: 100%;
+    height: 200px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.image-fade-out {
+    opacity: 0 !important;
+}
+
+.techno{
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #eff0f3;
+}
+
+button{
+    background: transparent;
+    color: #eff0f3;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 30px;
+}
+
+a{
+    padding: 12px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #eff0f3;
+    background-color: #3050cf;
+    border-radius: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1px;
+    border: #3050cf;
+    transition: 0.3s all ease;
+}
+
+a:hover{
+    background-color: #405ed3;
+    transition: 0.3s all ease;
+}

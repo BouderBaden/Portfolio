@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: #0f131a;
+    scroll-behavior: smooth;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface{
+    background-color: transparent !important;
+}
+
+mat-dialog-container{
+    display: flex !important ;
+}
+
+.mdc-dialog__container{
+    width: 32% !important;
+    min-height: 620px !important;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .mdc-dialog__container{
+        width: 42% !important;
+        min-height: 620px !important;
+    }
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .mdc-dialog__container {
+        width: 47% !important;
+        min-height: 620px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .mdc-dialog__container {
+        width: 53% !important;
+        min-height: 620px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .mdc-dialog__container {
+        width: 58% !important;
+        min-height: 620px !important;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    .mdc-dialog__container {
+        width: 85% !important;
+        min-height: 620px !important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .mdc-dialog__container {
+        width: 95% !important;
+        min-height: 620px !important;
+    }
+}
+
+
+.mat-dialog-container{
+    height: 600px !important;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 10px !important;
+    overflow: hidden!important;
+}
+
+
+.cdk-overlay-pane{
+    max-width: 100% !important;
+    justify-content: center;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-h3, .mat-subtitle-1, .mat-typography .mat-h3, .mat-typography .mat-subtitle-1, .mat-typography h3{
+    line-height: 35px !important;
+}
+
+.mat-h2, .mat-headline-6, .mat-typography .mat-h2, .mat-typography .mat-headline-6, .mat-typography h2{
+    line-height: 40px !important;
+}
+

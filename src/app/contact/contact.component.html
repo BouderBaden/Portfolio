@@ -1,0 +1,36 @@
+<div class="div-separator"></div>
+<section class="contact" id="contact">
+    <h2>Contact me</h2>
+    <div class="contenant-form">
+        <form #contactForm="ngForm">
+            <label for="lastName">Last Name :</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Dupont" [(ngModel)]="formData.lastName">
+      
+            <label for="firstName">First Name :</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Franck" [(ngModel)]="formData.firstName">
+        
+            <label for="email">Email<span>*</span> :</label>
+            <input type="email" id="email" name="email" placeholder="Franck.Dupont@gmail.com" [(ngModel)]="formData.email" required>
+        
+            <label for="subject">Subject<span>*</span> :</label>
+            <input type="text" id="subject" name="subject" placeholder="How are you?" [(ngModel)]="formData.subject" required>
+        
+            <label for="message">Message<span>*</span> :</label>
+            <textarea
+            placeholder="Hi I just wanted to know how are you my friend :)"
+            #contactFormTextarea
+            name="message"
+            [(ngModel)]="textContent"
+            (input)="resizeTextarea()"
+            [style.height]="getTextareaHeight()"
+            required
+          ></textarea>
+
+
+
+            <div class="ctn-btn">
+                <button type="submit" [disabled]="!contactForm.valid">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>

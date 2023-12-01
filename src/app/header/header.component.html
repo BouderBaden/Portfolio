@@ -1,0 +1,27 @@
+<header>
+  <nav>
+    <a href="#aboutme" class="head-title">Y<span>.</span>G</a>
+    <div class="nav-desktop">
+      <a href="#aboutme" class="lien">About me</a>
+      <a href="#projects" class="lien">Projects</a>
+      <a href="#certifications" class="lien">Certifications</a>
+      <a href="#contact" class="lien">Contact</a>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <div class="burger-menu" (click)="toggleMobileMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+<!-- ... Autres éléments HTML ... -->
+<div class="mobile-links" [ngClass]="{'show': isMobileMenuOpen}">
+  <a (click)="closeMobileMenu()" href="#aboutme" class="lien-burger"><span>About me</span></a>
+  <a (click)="closeMobileMenu()" href="#projects" class="lien-burger"><span>Projects</span></a>
+  <a (click)="closeMobileMenu()" href="#certifications" class="lien-burger"><span>Certifications</span></a>
+  <a (click)="closeMobileMenu()" href="#contact" class="lien-burger"><span>Contact</span></a>
+</div>
+<!-- ... Autres éléments HTML ... -->
+
+    </div>
+  </nav>
+</header>

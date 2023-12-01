@@ -1,0 +1,319 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 0;
+}
+
+.about h2 {
+    color: #eff0f3;
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.little {
+    justify-content: space-evenly;
+}
+
+.div-separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin: 3% 0;
+}
+
+.contenant-img-certif{
+    width: 45%;
+}
+
+.contenant-img-certif img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.contenant-img-certif img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.contenant-certif{
+    width: 80%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #1d1f25;
+}
+
+.info-certif{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.date{
+    font-size: 24px;
+    color: #eff0f3;
+    font-family: "Inter", sans-serif;
+}
+
+.info-certif h3{
+    font-size: 32px;
+    color: #eff0f3;
+    font-family: "Inter", sans-serif;
+}
+
+.description{
+    font-size: 22px;
+    color: #eff0f3;
+    font-family: "Inter", sans-serif;
+}
+
+.read{
+    font-size: 1.6rem;
+    font-family: 'Gilmer', sans-serif;
+    padding: 14px;
+    margin: 6% 0 0%;
+    border: none;
+    border-radius: 50px;
+    background-color: #3050cf;
+    color: #eff0f3;
+    transition: 0.8s all ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.read:hover {
+    background-color: #405ed3;
+} 
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #ccc;
+}
+
+.fade {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .contenant-certif{
+        width: 90%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #1d1f25;
+    }
+
+    .contenant-img-certif {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .contenant-certif{
+        width: 90%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #1d1f25;
+    }
+
+    .contenant-img-certif {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .contenant-certif{
+        width: 90%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #1d1f25;
+    }
+
+    .contenant-img-certif {
+        width: 60%;
+    }
+
+    .info-certif{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .contenant-certif{
+        width: 90%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #1d1f25;
+    }
+
+    .contenant-img-certif {
+        width: 70%;
+    }
+    .info-certif{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 0;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    .contenant-certif{
+        width: 90%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #1d1f25;
+    }
+
+    .contenant-img-certif {
+        width: 80%;
+    }
+    .info-certif{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .contenant-certif{
+        width: 95%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #1d1f25;
+    }
+
+    .contenant-img-certif {
+        width: 100%;
+    }
+
+    .info-certif{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 0;
+    }
+}

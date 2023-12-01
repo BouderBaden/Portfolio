@@ -1,0 +1,32 @@
+<article (keydown.escape)="closeDialog()">
+    <div class="header-modale">
+        <h1>WeatherApp</h1>
+        <span (click)="closeDialog()">✕</span>
+    </div>
+    <div class="modale-body">
+        <p class="date">April 2023</p>
+        <div class="slider">
+            <button (click)="prevImage()">❮</button>
+            <div class="contenant-image">
+                <img *ngIf="images.length > 0" [src]="images[currentImageIndex]" alt="Image du projet">
+            </div>
+            <button (click)="nextImage()">❯</button>
+        </div>
+        
+        <div class="indicators">
+            <span *ngFor="let indicator of indicators; let i = index" 
+                  class="indicator" 
+                  [class.active]="indicator" 
+                  (click)="goToImage(i)">
+            </span>
+        </div>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, beatae! Ea neque in veritatis
+             accusamus numquam quisquam porro cumque praesentium
+             nobis, dignissimos excepturi dolor iusto, similique molestias consequuntur vero quis.
+        </p>
+        <p class="techno">Stack: JavaScript</p>
+    </div>
+    <div class="modale-footer">
+        <a href="#">Link</a>
+    </div>
+</article>

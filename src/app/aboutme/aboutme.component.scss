@@ -1,0 +1,415 @@
+.first-infos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 24px;
+}
+
+.about-and-stack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 55%;
+}
+
+.content h2 {
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+    color: #eff0f3;
+    font-weight: 800;
+}
+
+.box-stack {
+    display: flex;
+    gap: 24px;
+}
+
+.content-stack {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    animation: stack-slide 6s 1.5s ease-in-out infinite;
+    transition: 1s;
+}
+
+.content-stack .box-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+    background-color: #1d1f25;
+    border-radius: 20%;
+}
+
+.content-stack:nth-child(1) {
+    justify-content: flex-end;
+    animation-delay: 0s;
+}
+
+.content-stack:nth-child(2) {
+    justify-content: flex-start;
+    animation-delay: 0.5s;
+}
+
+.content-stack:nth-child(3) {
+    margin-top: 24px;
+    animation-delay: 1s;
+}
+
+#eclipse-svg {
+    width: 42px;
+    height: 42px;
+    fill: white;
+    color: #fff;
+}
+
+.typed-text{
+    display: flex;
+    flex-direction: row;
+    color: #145C9E;
+    font-size: 2.8rem;
+    font-family: 'Inter', sans-serif;
+    margin: 3% 0;
+    font-weight: 800;
+}
+
+.flex{
+    display: flex;
+}
+
+.content p {
+    font-size: 2.1rem;
+    margin: 2% 0;
+    width: 70%;
+    text-align: left;
+    font-family: 'Rajdhani';
+    font-weight: 800;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.presentation a{
+    text-decoration: none;
+    color: #eff0f3;
+}
+
+.scrolldown {
+    position: absolute;
+    display: table;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mouse {
+    position: relative;
+    height: 34px;
+    width: 22px;
+    border: 2px solid #eff0f3;
+    border-radius: 50px
+}
+
+.mouse__wheel {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: #eff0f3;
+    border-radius: 50px;
+    top: 8px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    animation: scroll-down 1.8s 0s ease-in-out infinite
+}
+
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    50% {
+        transform: translateY(8px)
+    }
+
+    80% {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes stack-slide {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-24px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .about-and-stack{
+        width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .typed-text {
+        display: flex;
+        flex-direction: row;
+        color: #145C9E;
+        font-size: 2.8rem;
+        font-family: "Inter", sans-serif;
+        margin: 5% 0;
+        font-weight: 800;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 70%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .about-and-stack{
+        width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .typed-text {
+        display: flex;
+        flex-direction: row;
+        color: #145C9E;
+        font-size: 2.8rem;
+        font-family: "Inter", sans-serif;
+        margin: 5% 0;
+        font-weight: 800;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 70%;
+        text-align: left;
+        line-height: 1;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .box-stack{
+        display: none;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 70%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .typed-text[_ngcontent-ng-c336883406] {
+        display: flex;
+        flex-direction: row;
+        color: #145C9E;
+        font-size: 2.8rem;
+        font-family: "Inter", sans-serif;
+        margin: 5% 0;
+        font-weight: 800;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .content {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .box-stack{
+        display: none;
+    }
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 70%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .typed-text[_ngcontent-ng-c336883406] {
+        display: flex;
+        flex-direction: row;
+        color: #145C9E;
+        font-size: 2.8rem;
+        font-family: "Inter", sans-serif;
+        margin: 5% 0;
+        font-weight: 800;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .content {
+        width: 60%;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+
+    .box-stack{
+        display: none;
+    }
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 70%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .typed-text[_ngcontent-ng-c336883406] {
+        display: flex;
+        flex-direction: row;
+        color: #145C9E;
+        font-size: 2.8rem;
+        font-family: "Inter", sans-serif;
+        margin: 5% 0;
+        font-weight: 800;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .box-stack{
+        display: none;
+    }
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 70%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .typed-text[_ngcontent-ng-c336883406] {
+        display: flex;
+        flex-direction: row;
+        color: #145C9E;
+        font-size: 2.8rem;
+        font-family: "Inter", sans-serif;
+        margin: 0% 0 5%;
+        font-weight: 800;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        margin: 2% 0;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        font-family: "Rajdhani";
+        font-weight: 800;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .content h2 {
+        font-size: 3rem;
+        font-family: "Inter", sans-serif;
+        color: #eff0f3;
+        font-weight: 800;
+    }
+
+    .content {
+        width: 82%;
+    }
+}

@@ -1,0 +1,40 @@
+<div class="div-separator"></div>
+<section class="about little" id="certifications">
+  <h2 class="">My Certifications</h2>
+  <div class="certification-slide">
+    <div class="card-project">
+      <div class="contenant-certif">
+        <div
+          class="contenant-img-certif"
+          [@fadeImageAnimation]="isFadingOut ? 'void' : ''"
+        >
+          <img
+            [src]="certifications[currentCertificationIndex].imageUrl"
+            alt="Screenshot d'une Certification"
+          />
+        </div>
+        <div
+          class="info-certif"
+          [@fadeInfoAnimation]="isFadingOut ? 'void' : ''"
+        >
+          <p class="date">
+            {{ certifications[currentCertificationIndex].date }}
+          </p>
+          <h3>{{ certifications[currentCertificationIndex].title }}</h3>
+          <p class="description">
+            {{ certifications[currentCertificationIndex].description }}
+          </p>
+          <a href="#" class="read">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="indicators">
+    <span
+      *ngFor="let certification of certifications; let i = index"
+      class="indicator"
+      [class.active]="i === currentCertificationIndex"
+      (click)="goToCertification(i)"
+    ></span>
+  </div>
+</section>
